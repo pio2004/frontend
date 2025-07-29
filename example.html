@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title></head>
+<style>
+		ol.custom-numbers {
+			list-style-type: none;
+			counter-reset: custom-counter;
+			padding-left: 0;
+		}
+		ol.custom-numbers li {
+			counter-increment: custom-counter;
+			margin-bottom: 5px;
+		}
+		ol.custom-numbers li::before {
+			content: counter(custom-counter) ". ";
+			font-weight: bold;
+			margin-right: 5px;
+		}
+        .table2{
+            border-collapse: separate;
+        border-spacing: 10px;
+         empty-cells: show;
+         table-layout: auto;
+         width: 80px;
+        }
+        .table1{
+            border-collapse: collapse;
+        border-spacing: 10px 30px;
+        empty-cells:hide;
+        table-layout: fixed;
+        width: 80px;
+        }
+table,td,th {
+        border: 2px solid rgb(0, 0, 0);}
+	</style>
+
+<body>
+	<ol class="custom-numbers">
+		<li>Step one</li>
+		<li>Step two</li>
+		<li>Step three</li>
+	</ol>
+    <table class="table2">
+
+        
+        <caption>example table</caption>
+        <tr>
+            <th>name</th>
+            <th>rollno</th>
+        </tr>
+        <tr>
+            <td>selva
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>name</th>
+            <th>rollno</th>
+        </tr>
+        <tr>
+            <td>selva
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th>name</th>
+            <th>rollno</th>
+        </tr>
+        <tr>
+            <td>selva
+            </td>
+            <td>1</td>
+        </tr>
+        
+    </table>
+    <br>
+    <br>
+    <table class="table1">
+      <tr>
+        <th>rollno</th>
+        <th>name</th>
+
+      </tr>
+      <tr>
+        <td></td>
+        <td>ganesh</td>
+      </tr>
+      <tr>
+        <th>rollno</th>
+        <th>name</th>
+
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>ganesh</td>
+      </tr>
+        
+    </table>
+</body>
+</html>

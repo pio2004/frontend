@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+
+<body>
+    
+    <style>
+        body{
+            background-color: rgb(237, 249, 244);
+        }
+        .topbar{
+            display: flex;
+            background-color: rgb(38, 109, 45);
+            height: 95px;
+            padding: 0px;
+            margin: -8px;
+
+        }
+        .search input{
+            width: 600px;
+            height: 25px;
+              padding: 8px 12px;
+              margin-top: 30px;
+              margin-left: 400px;
+              border-radius: 5px ;
+              border: none;
+
+        
+        }
+        .search button{
+            position: absolute;
+            height: 40px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            margin-top: 30px;
+            margin-left: 5px;
+        }
+        .icons{
+            color: aliceblue;
+            font-size: 250%;
+            margin-left: 90px;
+            margin-top: 26px;
+             cursor: pointer;
+
+            
+        }
+        .icons2{
+            color: aliceblue;
+            font-size: 250%;
+            margin-left: 50px;
+            margin-top: 26px;
+         cursor: pointer;
+        }
+        .box1{
+            
+            
+            width: 260px;
+            height: 150px;
+            margin-top: 50px;
+           padding-left: 20px;
+           margin-left: 20px;
+        
+        }
+        .box1 img{
+            margin-left: -19px;
+            border-radius: 10px;
+            
+        }
+        .box1 .text{
+            position: absolute;
+            color: rgb(255, 255, 255);
+            margin-top: -100px;
+            margin-left: 25px;
+            font-size:xx-large;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            
+            
+        }
+        .box2{
+              
+            width: 260px;
+            height: 150px;
+            padding-left: 20px;
+             margin-left: 20px;
+             margin-top: 50px;}
+             .box2 img{
+            margin-left: -21px;
+            border-radius: 10px;
+            
+
+        }
+       .box2 .text1{
+             position: absolute;
+            color: rgb(255, 255, 255);
+            margin-top: -100px;
+            margin-left: 9px; 
+            font-size:xx-large;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+
+            
+
+        }
+        .box3 img{
+             margin-left: 16px;
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+         .box3 .text2{
+             position: absolute;
+            color: rgb(255, 255, 255);
+            margin-top: -100px;
+            margin-left: 48px; 
+            font-size:xx-large;
+            font-family:Georgia, 'Times New Roman', Times, serif;}
+            .box4 img{
+             margin-left: 16px;
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+         .box4 .text3{
+             position: absolute;
+            color: rgb(255, 255, 255);
+            margin-top: -100px;
+            margin-left: 48px; 
+            font-size:xx-large;
+            font-family:Georgia, 'Times New Roman', Times, serif;}
+        .container{
+            
+            display:inline-flex;
+            padding-left: 150px;
+        }
+        .card1{
+            background-color: rgb(38, 109, 45);
+            width: 350px;
+            height: 400px;
+            padding: 5px;
+            margin-left: 140px;
+            margin-top: 50px;
+            border-radius: 2px;
+            
+        }
+        .card1 img{
+            border-radius: 5px;
+        }
+        .t1, .t2, .t3{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: aliceblue;
+            font-size: large;
+            line-height: 30px;
+            padding-left: 8px;
+        }
+        .card2{
+            background-color: rgb(38, 109, 45);
+            width: 350px;
+            height: 400px;
+            padding: 5px;
+            margin-left: 140px;
+            margin-top: 50px;
+            border-radius: 2px;
+            
+        }
+        .card2 img,.card3 img,.c1 img,.c2 img,.c3 img{
+            border-radius: 5px;
+        }
+         .card3{
+            background-color: rgb(38, 109, 45);
+            width: 350px;
+            height: 400px;
+            padding: 5px;
+            margin-left: 140px;
+            margin-top: 50px;
+            border-radius: 2px;
+            
+        }
+      
+        .container2{
+            display: flex;
+            margin-left: -55px;
+        }
+         .c1{
+            background-color: rgb(38, 109, 45);
+            width: 350px;
+            height: 400px;
+            margin-left: 84px;
+            margin-top: 40px;
+            padding: 5px;
+            border-radius: 2px;
+            
+
+         }
+         .c2{
+          background-color: rgb(38, 109, 45);
+            width: 350px;
+            height: 400px;
+            margin-left: 140px;
+            margin-top: 40px;
+            padding: 5px;
+            border-radius: 2px;
+         }
+         .c3{
+            background-color: rgb(38, 109, 45);
+            width: 350px;
+            height: 400px;
+            margin-left: 140px;
+            margin-top: 40px;
+            padding: 5px;
+            border-radius: 2px;
+
+         }
+         .container3{
+            display: flex;
+         }
+         .foot{
+             background-color: rgb(38, 109, 45);
+             width: 1521px;
+             height: 50px;
+             padding: 0px;
+             margin: -8px;
+
+             color:aliceblue;
+             text-align: center;
+         }
+         
+      
+      
+      
+        
+    
+      
+
+            
+
+        
+            
+           
+            
+
+            
+            
+        
+       
+    </style>
+    
+    <header class="topbar">
+        <div class="img">
+            <img src="C:\Users\PIO\Downloads\farm.png" width="100px" height="100px" alt="logo">
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search Products...">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+        
+    
+        <div class="icons">
+          
+             <i class="fa fa-shopping-cart" aria-hidden="true"></i></div>
+             <div class="icons2">
+        <i class="fa fa-user-circle-o" aria-hidden="true"  ></i>
+       </div>
+        
+       
+    </header>
+    <div class="container">
+    <div class="box1">
+      <img src="C:\Users\PIO\Downloads\dry.jpg" width="280px" height="150px" alt="dry">
+      <div class="text">DRY FRUITS</div>
+
+       
+
+    </div>
+    <div class="box2">
+        <img src="C:\Users\PIO\Downloads\fresh.jpg" width="280px" height="150px" alt="fresh">
+        <div class="text1">FRESH FRUITS</div>
+    </div>
+    <div class="box3">
+        <img src="C:\Users\PIO\Downloads\vege.jpg" width="280px" height="150px" alt="VEGETABLES">
+        <div class="text2">VEGETABLES</div>
+
+    </div>
+    <div class="box4">
+        <img src="C:\Users\PIO\Downloads\tomato.jpg" width="280px" height="150px"alt="tomato">
+        <div class="text3">DAILY FRESH</div>
+    </div>
+    </div>
+    <div class="container2">
+<div class="card1">
+    <img src="C:\Users\PIO\Downloads\badam.jpg" width="350px" height="300px" alt="">
+    <div class="t1">Almond<br>$15<br></div>
+</div>
+<div class="card2">
+    <img src="C:\Users\PIO\Downloads\apple.jpg"width="350px" height="300px"alt="">
+    <div class="t2">Apple<br>$30<br></div>
+</div>
+<div class="card3">
+    <img src="C:\Users\PIO\Downloads\carrot.jpg" width="350px" height="300px" alt="">
+     <div class="t2">Carrot<br>$40<br></div>
+
+</div>
+    </div>
+    <div class="container3">
+        <div class="c1">
+<img src="C:\Users\PIO\Downloads\cashew.jpg" width="350px" height="300px" alt="">
+<div class="t3">Cashew<br>$50</div>
+        </div>
+        <div class="c2">
+<img src="C:\Users\PIO\Downloads\b.jpg" width="350px" height="300px" alt="">
+<div class="t3">Banana<br>$50</div>
+        </div>
+        <div class="c3">
+<img src="C:\Users\PIO\Downloads\bt.jpg" width="350px" height="300px" alt="">
+<div class="t3">Beetroot<br>$50</div>
+        </div> 
+        
+    </div>
+   <br> <footer class="foot"><p>Copyright © 2010-2025 FRESH FARM Company S.L. All rights reserved.</p></footer>
+</body>
+</html>
